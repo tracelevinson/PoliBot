@@ -193,17 +193,6 @@ def model_init(self, vocab_size, embed_size, layer_size):
 
 IntentClassifier.__init__ = classmethod(model_init)
 
-# def query_predict(self, session, X, X_len):
-#     feed_dict = {
-#             self.input_batch: X,
-#             self.input_batch_len: X_len,
-#         }
-#     logits = session.run('logits:0', feed_dict=feed_dict)
-#
-#     return tf.nn.sigmoid(logits)
-#
-# IntentClassifier.query_predict = classmethod(query_predict)
-
 # Train model on input batch
 def batch_train(self, session, X, X_len, Y, learning_rate, dropout_keep_prob):
     feed_dict = {
