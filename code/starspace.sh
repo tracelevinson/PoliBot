@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ############################################################################################################
-# starspace.sh
+# starspace.sh [DEPRECATED]
 
 # Bash script builds article embeddings using Starspace model framework.
 
@@ -9,10 +9,10 @@
 # Output: ss_embeddings.tsv (word embeddings used to form final article embeddings)
 ############################################################################################################
 
-train_path='.../PoliBot/data/articles_ss_train.tsv'
-test_path='.../PoliBot/data/articles_ss_test.tsv'
-base_docs_path='.../PoliBot/data/test_base_docs.tsv'
-embed_path='.../PoliBot/results/ss_embeddings.tsv'
+train_path='/full/path/to/PoliBot/data/articles_ss_train.tsv'
+test_path='/full/path/to/PoliBot/data/articles_ss_test.tsv'
+base_docs_path='/full/path/to/PoliBot/data/test_base_docs.tsv'
+embed_path='/full/path/to/PoliBot/results/ss_embeddings.tsv'
 
 echo $train_path
 # Train Starspace model
