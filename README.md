@@ -1,1 +1,1 @@
-# The PoliBot: see PoliBot.ipynb for write-up
+### Welcome to the PoliBot repo! See PoliBot.ipynb for the project write-up and check out @thePoliBot on Telegram.
