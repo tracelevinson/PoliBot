@@ -344,14 +344,14 @@ if __name__=='__main__':
     plt.xlim(0, viz_df.index[-1]+0.5)
     plt.ylim(-0.1, 1)
     plt.axhline(y=0, color='black', lw=0.5, linestyle='--', dashes=(5,10))
-    plt.savefig('images/loss_accuracy.png')
+    plt.savefig('../images/loss_accuracy.png')
 
     # Confusion matrix
     plt.figure()
     cm = confusion_matrix(test_truths, test_preds)
     sn.heatmap(cm, annot=True, cmap='Blues', fmt='g')
     plt.title('Testing Confusion Matrix')
-    plt.savefig('images/confusion_matrix.png')
+    plt.savefig('../images/confusion_matrix.png')
 
     #############
     # SAVE MODEL
